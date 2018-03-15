@@ -15,10 +15,10 @@ class String
   end
 
   def count_sentences
-  	temp = self.split(/[.?!]/)
+  	temp = self.split(/[.?!]+/).map.count
   	#temp_2 = temp.select{|x| x.split.size > 1}
-  	temp_2 = temp.select{|x| x.length > 1}
-  	temp_2.length
+  	# temp_2 = temp.select{|x| x.length > 1}
+  	# temp_2.length
   	#binding.pry
   end
 end
